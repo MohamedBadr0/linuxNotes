@@ -1,0 +1,104 @@
+    1  cd .
+    2  pwd
+    3  python --version
+    4  python3 --version
+    5  pip apt install code
+    6  apt install code
+    7  cd Downloads/
+    8  ls
+    9  sudo apt install ./code_1.96.4-1736991114_amd64.deb 
+   10  echo "Hello, Git" 
+   11  echo "Hello, Git" | git hash-object --stdin
+   12  echo "Hello, Git" | shasum
+   13  echo -e "blob 11\0Hello, Git"
+   14  echo -e "blob 11\0Hello, Git" | shasum
+   15  git config --global user.name "Mohamed Badr"
+   16  git config --global user.email "mohamedbadr8817@gmail.com"
+   17  git config --list
+   18  ls
+   19  echo "Hello, Git" >> file.txt
+   20  ls
+   21  cat file.txt 
+   22  ls -a
+   23  ls -al
+   24  history 
+   25  history >> history.txt
+   26  git init
+   27  ls -al
+   28  cd .git/
+   29  ls -al
+   30  cd objects/
+   31  ls -al
+   32  cd ../..
+   33  la -al
+   34  git status
+   35  git ls-files
+   36  git add file.txt 
+   37  git status
+   38  git ls-files
+   39* 
+   40  find .git/objects/ -type f
+   41  git ls-files
+   42  git ls-files -s
+   43  git cat-file -t b7aec520dec0a7516c18eb4c68b64ae1eb9b5a5e
+   44  git cat-file -t b7aec520dec0a7516c18eb4c68b64ae1eb9b5a5e
+   45  git cat-file -s b7aec520dec0a7516c18eb4c68b64ae1eb9b5a5e
+   46  git cat-file -p b7aec520dec0a7516c18eb4c68b64ae1eb9b5a5e
+   47  git commit -m "initial commit - file.txt"
+   48  git status
+   49  find .git/objects/ -type f
+   50  git log
+   51  git cat-file -t b73
+   52  git cat-file -t b7334d
+   53  git cat-file -p b7334d
+   54  git cat-file -p 15853
+   55  git cat-file -p b7aec
+   56  git status
+   57  git status -s
+   58  git add file.txt 
+   59  git status -s
+   60  git status 
+   61  git commit -m "second line to file.txt"
+   62  git status 
+   63  git log
+   64  find .git/objects/ type -f
+   65  find .git/objects/ -type f
+   66  git cat-file -p 212b65
+   67  git cat-file -p b7334
+   68  git status -s
+   69  git diff
+   70  git status -s
+   71  git add file.txt 
+   72  git status -s
+   73  git diff
+   74  git diff --staged
+   75  git config --global core.editor "vim"
+   76  git commit
+   77  git commit -m "third line to file.txt"
+   78  git log
+   79  git log --oneline
+   80  git log --oneline file.txt
+   81  git log --oneline -2
+   82  git log --oneline --graph
+   83  git show 212b
+   84  git diff
+   85  git diff --staged
+   86  git diff b7334d9..a6fecel
+   87  git diff b7334d9..a6fece1
+   88  rm -rf .git/
+   89  history
+   90  history > ../history.txt 
+    1* 
+    2  git commit -am "fourth commit in file.txt"
+    3  git log
+    4  git log --oneline
+    5  git show 7b21f
+    6  git show 6bdd5
+    7  ls .git/
+    8  cat .git/HEAD 
+    9  history
+   10  history -a
+   11  history 
+   12  history >> ../history.txt 
+   
+   https://marklodato.github.io/visual-git-guide/index-en.html

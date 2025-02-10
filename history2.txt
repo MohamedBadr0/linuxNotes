@@ -1,0 +1,251 @@
+    1  cd .
+    2  pwd
+    3  python --version
+    4  python3 --version
+    5  pip apt install code
+    6  apt install code
+    7  cd Downloads/
+    8  ls
+    9  sudo apt install ./code_1.96.4-1736991114_amd64.deb 
+   10  echo "Hello, Git" 
+   11  echo "Hello, Git" | git hash-object --stdin
+   12  echo "Hello, Git" | shasum
+   13  echo -e "blob 11\0Hello, Git"
+   14  echo -e "blob 11\0Hello, Git" | shasum
+   15  git config --global user.name "Mohamed Badr"
+   16  git config --global user.email "mohamedbadr8817@gmail.com"
+   17  git config --list
+   18  ls
+   19  echo "Hello, Git" >> file.txt
+   20  ls
+   21  cat file.txt 
+   22  ls -a
+   23  ls -al
+   24  history 
+   25  history >> history.txt
+   26  git init
+   27  ls -al
+   28  cd .git/
+   29  ls -al
+   30  cd objects/
+   31  ls -al
+   32  cd ../..
+   33  la -al
+   34  git status
+   35  git ls-files
+   36  git add file.txt 
+   37  git status
+   38  git ls-files
+   39  find .git/objects/ -type f
+   40  git ls-files
+   41  git ls-files -s
+   42  git cat-file -t [200~b7aec520dec0a7516c18eb4c68b64ae1eb9b5a5e
+   43  git cat-file -t b7aec520dec0a7516c18eb4c68b64ae1eb9b5a5e
+   44  git cat-file -s b7aec520dec0a7516c18eb4c68b64ae1eb9b5a5e
+   45  git cat-file -p b7aec520dec0a7516c18eb4c68b64ae1eb9b5a5e
+   46  git commit -m "initial commit - file.txt"
+   47  git status
+   48  find .git/objects/ -type f
+   49  git log
+   50  git cat-file -t b73
+   51  git cat-file -t b7334d
+   52  git cat-file -p b7334d
+   53  git cat-file -p 15853
+   54  git cat-file -p b7aec
+   55  git status
+   56  git status -s
+   57  git add file.txt 
+   58  git status -s
+   59  git status 
+   60  git commit -m "second line to file.txt"
+   61  git status 
+   62  git log
+   63  find .git/objects/ type -f
+   64  find .git/objects/ -type f
+   65  git cat-file -p 212b65
+   66  git cat-file -p b7334
+   67  git status -s
+   68  git diff
+   69  git status -s
+   70  git add file.txt 
+   71  git status -s
+   72  git diff
+   73  git diff --staged
+   74  git config --global core.editor "vim"
+   75  git commit
+   76  git commit -m "third line to file.txt"
+   77  git log
+   78  git log --oneline
+   79  git log --oneline file.txt
+   80  git log --oneline -2
+   81  git log --oneline --graph
+   82  git show 212b
+   83  git diff
+   84  git diff --staged
+   85  git diff b7334d9..a6fecel
+   86  git diff b7334d9..a6fece1
+   87  rm -rf .git/
+   88  history
+   89  history > ../history.txt 
+   90  history -a
+   91  history -a mm.txt
+   92  ls -al
+   93  git init
+   94  ls -al
+   95  git log
+   96  git stau
+   97  git status
+   98  git add .
+   99  git status
+  100  git rm cached file.txt 
+  101  git status
+  102  git rm --cached file.txt 
+  103  git status
+  104  git add .
+  105  git status
+  106  git commit -m "initial commit - file.txt"
+  107  git status
+  108  git log
+  109  git status
+  110  git restore file.txt 
+  111  git add .
+  112  git status
+  113  git restore --staged file.txt 
+  114  git restore file.txt
+  115  git commit -am "second commit for file.txt"
+  116  git log
+  117  git log --oneline
+  118  git commit -am "third commit for file.txt"
+  119  git log
+  120  git log --oneline
+  121  git commit --amend
+  122  git log --oneline
+  123  git log
+  124  history -w
+  125  ls -al
+  126  git init
+  127  ls -al
+  128  git log
+  129  git stau
+  130  git status
+  131  git add .
+  132  git status
+  133  git rm cached file.txt 
+  134  git status
+  135  git rm --cached file.txt 
+  136  git status
+  137  git add .
+  138  git status
+  139  git commit -m "initial commit - file.txt"
+  140  git status
+  141  git log
+  142  git status
+  143  git restore file.txt 
+  144  git add .
+  145  git status
+  146  git restore --staged file.txt 
+  147  git restore file.txt
+  148  git commit -am "second commit for file.txt"
+  149  git log
+  150  git log --oneline
+  151  git commit -am "third commit for file.txt"
+  152  git log
+  153  git log --oneline
+  154  git commit --amend
+  155  git log --oneline
+  156  git log
+  157  history -w
+  158  history -a
+  159  git commit -am "fourth commit in file.txt"
+  160  git log
+  161  git log --oneline
+  162  git show 7b21f
+  163  git show 6bdd5
+  164  ls .git/
+  165  cat .git/HEAD 
+  166  history
+  167  history -a
+  168  history 
+  169  history >> ../history.txt 
+  170  git log --oneline
+  171  ls -al
+  172  git diff 7b21f66..HEAD
+  173  git reset --hard HEAD~1
+  174  git log --oneline
+  175  git reflog
+  176  git show a914f
+  177  git reset --hard HEAD@{1}
+  178  git reflog
+  179  git commit -am "fifth line for file.txt
+"
+  180  git log
+  181  git log --onelinr
+  182  git log --oneline
+  183  git tag -a v2.0 -m "version 2.0 of file.txt"
+  184  git show v2.0
+  185  git rm .git/
+  186  rm .git/
+  187  rm .git
+  188  rm -rf .git
+  189  ls -al
+  190  git init
+  191  git add .
+  192  git commit -am "initail commit for file.txt"
+  193  git log --oneline
+  194  git commit -am "second line for file.txt"
+  195  git log --oneline
+  196  alias
+  197  git commit -am "third line for file.txt"
+  198  git log --oneline
+  199  git branch testing
+  200  git branch
+  201  git log --oneline
+  202  git switch testing 
+  203  git log --oneline
+  204  git status
+  205  git commit -am "first commit in testing branch"
+  206  git log --oneline
+  207  git show head
+  208  git show HEAD
+  209  git switch master
+  210  git reflog
+  211  git switch testing
+  212  git log --oneline
+  213  git switch master
+  214  git merge testing
+  215  git log --oneline
+  216  git branch
+  217  git branch --merged
+  218  git branch -d testing
+  219  git branch --merged
+  220  git branch testing
+  221  git switch testing
+  222  git log --oneline
+  223  git commit -am "second commit in testing branch"
+  224  git log --oneline
+  225  git switch master
+  226  echo "line one in file2.txt" >> file2.txt
+  227  git commit -am "file2.txt added to master branch"
+  228  git log --oneline
+  229  git staus
+  230  git status
+  231  git add .
+  232  git commit -am "file2.txt added to master branch"
+  233  git log --oneline
+  234  git log
+  235  git log --oneline
+  236  git log --oneline --decorate
+  237  git log --oneline --graph --decorate --all
+  238  graph
+  239  git log --oneline --graph --decorate --all
+  240  git switch testing
+  241  git switch master
+  242  git log --oneline --graph --decorate --all
+  243  git merge testing
+  244  git log --oneline --graph --decorate --all
+  245  git branch --merged
+  246  git branch -d testing 
+  247  git log --oneline --graph --decorate --all
+  248  git show HEAD
+  249  history
+  250  history >> ../history2.txt 
