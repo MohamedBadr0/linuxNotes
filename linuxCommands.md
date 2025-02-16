@@ -1,4 +1,4 @@
-## Linux:
+# Linux Big Data :
 
 
 ### File Archive and Compression ( 05:48 ) :
@@ -267,7 +267,141 @@ sudo apt full-upgrade
 apt search terminal
 
 sudo apt remove <package_name>
+```
+
+### Connecting to Remote Servers (ssh, wget, curl, etc) ( 08:07 ) : 
+
+```
+dpkg -l | grep openssh
+apt show openssh-client
+
+cd ~
+ls -a
+cd .ssh/
+cat authorized_keys             ==> empty file
+
+ssh <server_name or ip_address>
+```
+
+### Introduction to Shell Scripts ( 09:21 ) :
+
+
+## linux DevOps :
+
+#### Viewing files in linux
+```
+cat /etc/passwd
+head /etc/passwd
+tail /etc/passwd
+less /etc/passwd
+```
+
+```
+setterm -fore red
+setterm -bold on
+setterm -fore green -back default
+setterm -fore green -back default -bold on --clear
+
+sudo yum install -y ksh
+ksh
+
+date 
+date --help
+man date                ==> /time search for time word in man bage
+date +%R
+date +%x
+
+file /etc/passwd
+file /etc/
+
+tail -n 5 /etc/passwd
+
+cp ~/somefile ~/file
+rm -rf directory
+
+touch file{1..5}
+mkdir -p nn/ss/zz
+ 
+history
+!1469               ==> !commandNumInHistory
+!mkdir              ==> run last mkdir command
+
+man man-pages
+man -k time
+man 5 time          ==> 5 section number
 
 ```
 
+#### vim
+```
+-- command mode
+dd              ==> delete line
+shift+g         ==> go to the end of the file
+gg              ==> go to the beginning of the file 
+i               ==> go to insert mode
+v               ==> go to visual mode
+shift+v         ==> visual mode selecting line
+ctrl+v          ==> visual mode selecting block
+:w              ==> save changes
+:q              ==> exit file
+:wq!            ==> save then exit
 
+-- insert mode
+Esc             ==> back to command mode
+
+-- visual mode
+x               ==> delete selection
+y               ==> copy selection
+p               ==> past selection
+```
+
+#### user and group managment
+```
+id                                  ==> info about current user
+id root
+id mohamed
+
+useradd user2
+useradd -u 3333 user3               ==> give id to user3
+useradd -u 4444 -c "comment for user4" user4       
+useradd -s /sbin/nologin user5      ==> -s for shell 
+userdel user2
+
+groupadd hr
+groupadd -g 5000 developer
+groupadd operations
+groupadd finance
+groupdel operations
+
+id user2
+id user3
+cat /etc/passwd
+cat /etc/group
+
+man 5 group
+man 5 passwd
+passwd user3                        ==> set passwd or change passwd
+
+su user1                            ==> switch to user1
+groups user3                        ==> see user3 groups
+
+usermod -u 2000 user3
+usermod -g hr user3
+usermod -aG developer user3         ==> append user3 to developer group
+
+sudo find /etc -name passwd
+which userdel
+```
+
+#### stdIn - stdOut
+```
+-- redirection
+find /etc -name passwd
+find /etc -name passwd 2> stderror      ==> save output on channel 2 in stderror file
+find /etc -name passwd 2> stderror 1> stdout
+
+-- pipelining
+cat /etc/passwd | tail -n 5
+cat /etc/passwd | tail -n 5 | grep user1
+
+```
